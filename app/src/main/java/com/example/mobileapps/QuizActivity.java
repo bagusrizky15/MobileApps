@@ -28,7 +28,6 @@ public class QuizActivity extends AppCompatActivity {
                     answer = 1;
             }
 
-
             Intent hasilIntent = new Intent();
             hasilIntent.putExtra(EXTRA_ANSWER, answer);
             setResult(RESULT_CODE, hasilIntent);
