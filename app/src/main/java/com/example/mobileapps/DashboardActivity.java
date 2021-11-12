@@ -20,6 +20,14 @@ public class DashboardActivity extends AppCompatActivity {
         TextView iniNama = (TextView) findViewById((R.id.iniNama));
         iniNama.setText(getIntent().getStringExtra(MainActivity.EXTRA_NAME));
 
+        TextView iniHasil = (TextView) findViewById(R.id.iniHasil);
+
+        Button buttonQuiz = (Button) findViewById(R.id.button_quiz);
+        buttonQuiz.setOnClickListener(v ->{
+            Intent gotoQuiz = new Intent(DashboardActivity.this, QuizActivity.class);
+            startActivity(gotoQuiz);
+        });
+
         Button buttonCall = (Button) findViewById(R.id.button_panggil);
         buttonCall.setOnClickListener(v ->{
             String number = "*123#";
