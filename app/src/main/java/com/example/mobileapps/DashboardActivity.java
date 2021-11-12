@@ -23,7 +23,7 @@ public class DashboardActivity extends AppCompatActivity {
         Button buttonCall = (Button) findViewById(R.id.button_panggil);
         buttonCall.setOnClickListener(v ->{
             String number = "*123#";
-            Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+number));
+            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+number));
             startActivity(callIntent);
 
         });
