@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             Log.d("--Phone--",inputPhone.getText().toString());
             Log.d("--Password--",inputPassword.getText().toString());
         });
-
     }
 
 
