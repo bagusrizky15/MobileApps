@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.Settings;
 import android.widget.Button;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -51,6 +52,12 @@ public class DashboardActivity extends AppCompatActivity {
             Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+number));
             startActivity(callIntent);
 
+        });
+
+        Button buttonlang = (Button) findViewById(R.id.button_lang);
+        buttonlang.setOnClickListener(v ->{
+            Intent intentlang = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intentlang);
         });
 
         Button buttonBack = (Button) findViewById(R.id.button_back);
