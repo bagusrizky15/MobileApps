@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MobileApps</string>
+
+    <string name="form_title">Isilah Form Berikut</string>
+    <string name="input_name_hint">Nama Lengkap</string>
+    <string name="input_email_hint">Alamat Email</string>
+    <string name="input_phone_hint">Nomor Handphone</string>
+    <string name="input_password_hint">Password</string>
+    <string name="button_reg_send">Simpan</string>
+</resources>
